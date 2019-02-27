@@ -94,14 +94,13 @@ router.post("/signup", (req, res, next) => {
     .save()
     .then(result => {
       console.log(result);
-      /**    axios.post('https://wallet-api.herokuapp.com/users', result, { headers: { Authorization: `${authHeader}` } }
-      axios.post('#', result, { headers: { Authorization: `${authHeader}` } }
+      axios.post('https://naijalottery-wallet-api.herokuapp.com/admin/auth/account-create/createAccount', result 
     ).then(function (response) {
       console.log(response);
   })
   .catch(function(error) {
       console.log(error);
-  })  */  
+  })   
       res.status(201).json({
         message: "Users has been created successfully",
         createdPpmv: result
