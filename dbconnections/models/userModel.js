@@ -13,7 +13,7 @@ const database = process.env.PPMV_NAME
 const user = process.env.PPMV_USERNAME
 const password = process.env.PPMV_PASSWORD
 
-mongoose.connect(`mongodb://${user}:${password}@${server}/${database}`, { useNewUrlParser: true },function(err) {
+mongoose.connect('mongodb://user:users1234@ds123196.mlab.com:23196/auth', { useNewUrlParser: true },function(err) {
     if (err) {throw err
     } else{
         console.log('You connected to a database')
