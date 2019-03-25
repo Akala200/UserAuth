@@ -73,7 +73,7 @@ app.get('/', (req, res) => {
 // prouct api route
 // cutomer api
 // ppmv api routes
-app.use(routePath.ppmvPath, isLoggedIn, ppmv);
+app.use(routePath.ppmvPath, ppmv);
 app.use(routePath.authAdminPath, authAdmin);// General Login spots
 
 //open routes??????????????????????????
